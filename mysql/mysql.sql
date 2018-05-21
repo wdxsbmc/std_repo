@@ -5,7 +5,7 @@ show variables like 'character_set%';
 #--quick set charactor
 set names gbk;
 
-#--drop db 
+#--drop db
 drop database if exists mydata;
 
 #--create
@@ -25,10 +25,14 @@ info_date date,
 info_time time,
 info_datetime datetime
 )collate utf8_general_ci;
- 
+
 
 #--insert into  record
 insert into user_info(info_name) values('aaa'),('bbb'),('ccc');
 
 #--check collate
 select * from user_info order by 'info_name';
+
+
+#show  database engines;
+show engines;
