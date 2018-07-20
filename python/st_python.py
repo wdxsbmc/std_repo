@@ -18,8 +18,7 @@ for k,v in aaa.items():
 #for
 char=[1,2,3,4,5,6]
 for i,c in enumerate(char):
-    print i,c
-
+    print(i,c)
 
 #lambda
 print('test lambda')
